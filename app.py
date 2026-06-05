@@ -175,6 +175,20 @@ def verify_api_key(req):
 # ROUTES
 # ═══════════════════════════════════════════
 
+
+@app.route("/demo", methods=["GET"])
+def demo_page():
+    return send_from_directory(
+        os.path.dirname(os.path.abspath(__file__)),
+        "demo.html"
+    )
+
+@app.route("/demo.cast", methods=["GET"])
+def demo_cast():
+    return send_from_directory(
+        os.path.dirname(os.path.abspath(__file__)),
+        "demo.cast"
+    )
 @app.route("/")
 def dashboard():
     return send_from_directory("static", "index.html")
