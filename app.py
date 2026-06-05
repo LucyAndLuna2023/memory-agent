@@ -9,7 +9,7 @@ Powered by Qwen Cloud (DashScope) on Alibaba Cloud.
 import os, json, hashlib, hmac, sqlite3, time, math, threading, re
 from datetime import datetime, timezone, timedelta
 from collections import Counter
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, redirect, request, jsonify, send_from_directory
 
 app = Flask(__name__, static_folder="static")
 DATABASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "memories.db")
@@ -192,6 +192,10 @@ def demo_cast():
 @app.route("/")
 def dashboard():
     return send_from_directory("static", "index.html")
+
+@app.route("/dashboard")
+def dashboard_alias():
+    return redirect("/")
 
 @app.route("/health")
 def health():
