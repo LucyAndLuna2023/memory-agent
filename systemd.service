@@ -1,0 +1,18 @@
+[Unit]
+Description=MemoryAgent - Qwen Cloud Hackathon
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/memory_saaS
+Environment=MEMORY_API_KEY=sk-mem-agent-2026
+Environment=QWEN_API_KEY=changeme
+Environment=QWEN_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+Environment=PORT=5000
+ExecStart=/usr/bin/python3 /opt/memory_saaS/app.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
