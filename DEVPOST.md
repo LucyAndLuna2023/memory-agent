@@ -47,6 +47,7 @@ Current agents lose context when sessions end. With MemoryAgent, an agent can:
 
 ## Live Demo
 
+- **Video**: https://youtu.be/mUdZtSJv29E
 - **API**: http://8.130.179.205:5000
 - **Dashboard**: http://8.130.179.205:5000
 - **GitHub**: https://github.com/LucyAndLuna2023/memory-agent

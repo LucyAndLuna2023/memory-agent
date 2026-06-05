@@ -7,6 +7,7 @@
 [![Deployed](https://img.shields.io/badge/deployed-Alibaba%20Cloud-orange)](http://8.130.179.205:5000)
 [![Python](https://img.shields.io/badge/python-3.11+-blue)](https://python.org)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Demo](https://img.shields.io/badge/demo-YouTube-red)](https://youtu.be/mUdZtSJv29E)
 
 ---
 
@@ -163,7 +164,8 @@ curl -X POST http://8.130.179.205:5000/memories/forget \
 ## 🧪 Live Demo
 
 - **Dashboard**: http://8.130.179.205:5000
-- **API Key**: `sk-mem-agent-2026`
+- **Video**: https://youtu.be/mUdZtSJv29E
+- **API Key**: `***`
 
 ---
 
